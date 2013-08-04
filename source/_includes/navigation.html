@@ -2,7 +2,7 @@
   <div class="navbar-inner">
     <a class="brand" href="{{ root_url }}/">{{ site.title }}</a>
     <ul class="nav">
-      <li><a href="{{ root_url }}/">Обзор</a></li>
+      <li><a href="{{ root_url }}/">Главная</a></li>
       <li><a href="{{ root_url }}/blog/archives">Архив</a></li>
     </ul>
     <ul class="nav" data-subscription="rss{% if site.subscribe_email %} email{% endif %}">
@@ -15,7 +15,7 @@
     <form class="navbar-form" action="{{ site.simple_search }}" method="get">
       <fieldset role="search">
         <input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
-        <input class="span2" type="text" name="q" results="0" placeholder="Search"/>
+        <input class="span2" type="text" name="q" results="0" placeholder="поиск"/>
       </fieldset>
     </form>
       {% endif %}
